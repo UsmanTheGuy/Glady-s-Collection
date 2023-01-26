@@ -24,30 +24,32 @@
     <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
 </head>
 <body>
-    <!-- 
-    - #HEADER
-  -->
 
+    <!-- HEADER -->
   <header class="header" data-header>
     <div class="header-top">
       <div class="container">
 
         <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" width="138" height="28" alt="booken home">
+          <img src="./assets/img/logo-1.png" width="138" height="28" alt="booken home">
         </a>
 
         <div class="input-wrapper">
           <input type="search" name="search" placeholder="Search our store" class="input-field">
 
-          <button class="btn btn-primary">Search</button>
+          <button class="btn btn-primary"> Search </button>
         </div>
 
         <div class="header-action">
 
           <button class="header-action-btn" aria-label="cart" title="Cart">
-            <span class="span">0</span>
-
-            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            
+            <a href="https://www.facebook.com/profile.php?id=100064169616982"></a>
+            
+            <ion-icon name="logo-facebook" aria-hidden="true">
+              <a href="https://www.facebook.com/profile.php?id=100064169616982"></a>
+            </ion-icon>
+            
           </button>
 
           <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
@@ -55,7 +57,7 @@
           </button>
 
           <button class="header-action-btn" aria-label="user" title="User">
-            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
           </button>
 
         </div>
@@ -83,33 +85,32 @@
           <ul class="navbar-list">
 
             <li>
-              <a href="#" class="navbar-link">Home</a>
+              <a href="#hero" class="navbar-link"> Home </a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Blog</a>
+              <a href="#aboutus" class="navbar-link"> About Us </a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">Shop</a>
+              <a href="#shop" class="navbar-link"> Shop </a>
+            </li>
+            
+            <li>
+              <a href="#popular" class="navbar-link"> Popular </a>
             </li>
 
             <li>
-              <a href="#" class="navbar-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link">Contact</a>
+              <a href="#" class="navbar-link"> Contact </a>
             </li>
 
           </ul>
 
         </nav>
 
-        <a href="tel:+0123456789" class="header-contact-link">
-          <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">(+01)-234-56789</span>
+        <a href="tel:+260979841330" class="header-contact-link">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          <span class="span">(+260)-97-984-1330</span>
         </a>
 
       </div>
@@ -117,11 +118,6 @@
 
     <div class="overlay" data-overlay data-nav-toggler></div>
   </header>
-
-
-
-
-
   <main>
     <article>
 
@@ -130,7 +126,7 @@
       -->
 
       <section class="section hero has-bg-image" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.jpg')">
+        style="background-image: url('./assets/img/hero-bg.jpg')" id="hero">
         <div class="container">
 
           <div class="hero-content">
@@ -141,28 +137,23 @@
             </h1>
 
             <p class="hero-text">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some formr.
+              There are many variations of passages of books available, 
             </p>
 
             <div class="btn-wrapper">
 
-              <a href="#" class="btn">
-                <span class="span">Explore More</span>
+              <a href="#shop" class="btn">
+                <span class="span"> Explore Collection </span>
 
                 <ion-icon name="cart" aria-hidden="true"></ion-icon>
               </a>
-
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
-              </button>
 
             </div>
 
           </div>
 
           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="475" height="600" alt="hero banner" class="w-100">
+            <img src="./assets/img/hero-bg.png" width="475" height="600" alt="hero banner" class="w-100">
           </figure>
 
         </div>
@@ -255,21 +246,68 @@
       </section>
 
 
+      <!-- 
+        - #OFFER
+      -->
 
+      <section class="section offer has-bg-image" aria-label="special offer"
+        style="background-image: url('./assets/images/section-bg.jpg')" id="aboutus">
+        <div class="container">
 
+          <p class="section-subtitle">Special Offers</p>
 
+          <h2 class="h2 section-title">All books are 50% off now! Don't miss such a deal!</h2>
+
+          <p class="section-text">
+            You will learn how to animate shapes like circles, lines, and polygons. You'll also learn how to animate CSS
+            properties
+            like color and size.
+          </p>
+
+          <ul class="countdown-list">
+
+            <li>
+              <p class="countdown-time">15</p>
+
+              <p class="countdown-label">Days</p>
+            </li>
+
+            <li>
+              <p class="countdown-time">21</p>
+
+              <p class="countdown-label">Hour</p>
+            </li>
+
+            <li>
+              <p class="countdown-time">18</p>
+
+              <p class="countdown-label">Min</p>
+            </li>
+
+            <li>
+              <p class="countdown-time">14</p>
+
+              <p class="countdown-label">Sec</p>
+            </li>
+
+          </ul>
+
+          <a href="#shop" class="btn"> See Collection </a>
+
+        </div>
+      </section>
 
       <!-- 
         - #FEATURED COLLECTION
       -->
 
-      <section class="section featured" aria-label="featured collection">
+      <section class="section featured" aria-label="featured collection" id="shop">
         <div class="container">
 
-          <h2 class="h2 section-title">Featured Collections</h2>
+          <h2 class="h2 section-title"> Our Collection </h2>
 
           <p class="section-text">
-            Contrary to popular belief, Lorem Ipsum is not simply random.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, similique.
           </p>
 
           <ul class="grid-list">
@@ -673,93 +711,18 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #OFFER
-      -->
-
-      <section class="section offer has-bg-image" aria-label="special offer"
-        style="background-image: url('./assets/images/section-bg.jpg')">
-        <div class="container">
-
-          <p class="section-subtitle">Special Offers</p>
-
-          <h2 class="h2 section-title">All books are 50% off now! Don't miss such a deal!</h2>
-
-          <p class="section-text">
-            You will learn how to animate shapes like circles, lines, and polygons. You'll also learn how to animate CSS
-            properties
-            like color and size.
-          </p>
-
-          <ul class="countdown-list">
-
-            <li>
-              <p class="countdown-time">15</p>
-
-              <p class="countdown-label">Days</p>
-            </li>
-
-            <li>
-              <p class="countdown-time">21</p>
-
-              <p class="countdown-label">Hour</p>
-            </li>
-
-            <li>
-              <p class="countdown-time">18</p>
-
-              <p class="countdown-label">Min</p>
-            </li>
-
-            <li>
-              <p class="countdown-time">14</p>
-
-              <p class="countdown-label">Sec</p>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn">Explore More</a>
-
-        </div>
-      </section>
-
-
-
-
-
       <!-- 
         - #POPULAR
       -->
 
-      <section class="section popular" aria-label="popular collection">
+      <section class="section popular" aria-label="popular collection" id="popular">
         <div class="container">
 
-          <h2 class="h2 section-title">Popular Collections</h2>
+          <h2 class="h2 section-title"> Popular Collections </h2>
 
           <p class="section-text">
-            Contrary to popular belief, Lorem Ipsum is not simply random.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
           </p>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn" data-filter-btn="featured">Featured Products</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn="new">New Products</button>
-            </li>
-
-            <li>
-              <button class="filter-btn" data-filter-btn="sell">Upsell Prodcuts</button>
-            </li>
-
-          </ul>
 
           <ul class="product-list has-scrollbar">
 
@@ -1160,137 +1123,90 @@
         </div>
       </section>
 
-
-
-
-
       <!-- 
-        - #BLOG
+        - #CONTACT
       -->
 
-      <section class="section blog" aria-label="blog">
+      <section class="section contact" aria-label="contact me" id="contact">
         <div class="container">
 
-          <h2 class="h2 section-title">Latest Blog</h2>
+          <h2 class="h2 section-title"> Contact </h2>
 
-          <p class="section-text">
-            Contrary to popular belief, Lorem Ipsum is not simply random.
-          </p>
+          <div class="contact-content">
 
-          <ul class="has-scrollbar">
+            <form action="" method="post" class="contact-form">
 
-            <li class="scrollbar-item">
-              <div class="blog-card">
+              <input type="text" name="name" placeholder="Full name" autocomplete="off" required class="input-field">
 
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/blog-1.jpg" width="600" height="400" loading="lazy"
-                    alt="Significant reading has info" class="img-cover">
-                </figure>
+              <input type="email" name="email_address" placeholder="Email address" autocomplete="off" required
+                class="input-field">
 
-                <div class="card-content">
+              <input type="tel" name="phone" placeholder="Phone" autocomplete="off" class="input-field">
 
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Significant reading has info</a>
-                  </h3>
+              <textarea name="message" placeholder="Enter massges" required class="input-field"></textarea>
 
-                  <ul class="card-meta-list">
+              <button type="submit" class="btn btn:hover">
+                <span class="span">Get A Quote</span>
 
-                    <li class="meta-item">
-                      <time class="meta-link" datetime="2022-03-04">04 March, 2022</time>
-                    </li>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
 
-                    <li class="meta-item">
-                      <a href="#" class="meta-link">1 comment</a>
-                    </li>
+            </form>
 
-                  </ul>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d898.4329239267093!2d-73.91493787358391!3d40.76299026683699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1671529019371!5m2!1sen!2sbd"
+              width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
 
-                  <p class="card-text">
-                    The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
-                  </p>
+            <ul class="contact-list">
 
-                  <a href="#" class="btn card-btn">Read More...</a>
+              <li class="contact-item">
 
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
                 </div>
 
-              </div>
-            </li>
+                <div>
+                  <span class="title h6">869. 368. 456. 56</span>
 
-            <li class="scrollbar-item">
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/blog-2.jpg" width="600" height="400" loading="lazy"
-                    alt="Activities Book International" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Activities Book International</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="meta-item">
-                      <time class="meta-link" datetime="2022-03-04">04 March, 2022</time>
-                    </li>
-
-                    <li class="meta-item">
-                      <a href="#" class="meta-link">1 comment</a>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
-                  </p>
-
-                  <a href="#" class="btn card-btn">Read More...</a>
-
+                  <span class="title h6">789 (569) 126 35</span>
                 </div>
 
-              </div>
-            </li>
+              </li>
 
-            <li class="scrollbar-item">
-              <div class="blog-card">
+              <li class="contact-item">
 
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/blog-3.jpg" width="600" height="400" loading="lazy"
-                    alt="International activities of the book" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">International activities of the book</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="meta-item">
-                      <time class="meta-link" datetime="2022-03-04">04 March, 2022</time>
-                    </li>
-
-                    <li class="meta-item">
-                      <a href="#" class="meta-link">1 comment</a>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
-                  </p>
-
-                  <a href="#" class="btn card-btn">Read More...</a>
-
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
                 </div>
 
-              </div>
-            </li>
+                <div>
+                  <address class="title h6">
+                    30- 24 Newtown Rd, Queens,
+                    NY 11103, USA
+                  </address>
+                </div>
 
-          </ul>
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+
+                <div>
+                  <span class="title h6"> email@email.com </span>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
 
         </div>
       </section>
@@ -1331,27 +1247,10 @@
               </a>
             </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
 
             <li>
               <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
 
@@ -1362,55 +1261,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Corporate</p>
+            <p class="footer-list-title"> Links </p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Careers</a>
+            <a href="#hero" class="footer-link"> Home </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="#aboutus" class="footer-link"> About Us </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#shop" class="footer-link"> Shop </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">FAQs</a>
+            <a href="#popular" class="footer-link"> Popular </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Vendors</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Information</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Online Store</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Refund Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Shipping Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#contact" class="footer-link"> Contact Us </a>
           </li>
 
         </ul>
@@ -1418,27 +1289,15 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Services</p>
+            <p class="footer-list-title"> Lorem </p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Grooming</a>
+            <a href="https://www.privacypolicygenerator.info/live.php?token=4kijCQPyTPlzeAYx5w9lwSulvouOIKzr" class="footer-link"> Privacy Policy </a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Positive Dog Training</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Veterinary Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Insurance</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Book Writing</a>
+            <a href="https://www.termsandconditionsgenerator.com/live.php?token=dS6GMDJ39Ce1az3QLMb0MnYHIAGnbzEr" class="footer-link"> Terms of Service </a>
           </li>
 
         </ul>
@@ -1450,33 +1309,18 @@
       <div class="container">
 
         <p class="copyright">
-          Copyright 2022 | Made With Love by codewithsadee.
+          Copyright 2023 | Gladys Collection.
         </p>
-
-        <img src="./assets/images/payment-mehtod.png" width="311" height="30" loading="lazy" alt="Payment method"
-          class="w-100">
 
       </div>
     </div>
 
   </footer>
 
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
+  <!--BACK TO TOP -->
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
-
-
-
-
-    
 
     <!-- JS -->
     <script src="./assets/js/main.js" defer></script>
